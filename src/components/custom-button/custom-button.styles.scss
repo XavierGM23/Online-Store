@@ -1,0 +1,65 @@
+.custom-button {
+	min-width: 200px;
+	width: auto;
+	height: auto;
+	letter-spacing: 0.5px;
+	line-height: 50px;
+
+	font-size: 15px;
+	color: white;
+	background-color: black;
+	box-shadow: 0px 5px 10px rgba(black, 0.6);
+	flex-direction: row;
+
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed';
+	font-weight: bolder;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s ease;
+
+	&--content {
+		padding: 0 25px 0 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 35px;
+			margin-right: 10px;
+		}
+	}
+
+	&:hover {
+		background-color: white;
+		color: black;
+		transform: translateY(-5px);
+		box-shadow: 0px 10px 20px rgba(black, 0.3);
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:active {
+		border: none;
+		transform: translateY(0px);
+		box-shadow: 0px 5px 10px rgba(black, 0.5);
+	}
+
+	&.google-sign-in {
+		background-color: #4285f4;
+		color: white;
+
+		&:hover {
+			background-color: #357ae8;
+			transform: translateY(-5px);
+			box-shadow: 0px 10px 20px rgba(black, 0.3);
+		}
+
+		&:active {
+			transform: translateY(0px);
+			box-shadow: 0px 5px 10px rgba(black, 0.5);
+		}
+	}
+}
