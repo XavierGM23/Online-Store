@@ -1,5 +1,5 @@
 .custom-button {
-	min-width: 200px;
+	min-width: 230px;
 	width: auto;
 	height: auto;
 	letter-spacing: 0.5px;
@@ -25,14 +25,15 @@
 		align-items: center;
 
 		img {
+			background-color: white;
+			border-radius: 100%;
 			width: 35px;
 			margin-right: 10px;
 		}
 	}
 
 	&:hover {
-		background-color: white;
-		color: black;
+		background-color: #777;
 		transform: translateY(-5px);
 		box-shadow: 0px 10px 20px rgba(black, 0.3);
 	}
@@ -48,11 +49,11 @@
 	}
 
 	&.google-sign-in {
-		background-color: #4285f4;
+		background-color: hsl(16, 89%, 41%);
 		color: white;
 
 		&:hover {
-			background-color: #357ae8;
+			background-color: hsl(16, 89%, 51%);
 			transform: translateY(-5px);
 			box-shadow: 0px 10px 20px rgba(black, 0.3);
 		}
