@@ -8,6 +8,7 @@ import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import './sign-up.styles.scss';
 
 class SignUp extends React.Component {
+	/* ====================== CONSTRUCTOR ======================*/
 	constructor() {
 		super();
 
@@ -18,7 +19,7 @@ class SignUp extends React.Component {
 			confirmPassword: ''
 		};
 	}
-
+	/* ====================== HANDLE SUBMIT METHOD ======================*/
 	handleSubmit = async (event) => {
 		event.preventDefault();
 
@@ -45,12 +46,13 @@ class SignUp extends React.Component {
 		}
 	};
 
+	/* ====================== HANDLE CHANGE METHOD ======================*/
 	handleChange = (event) => {
 		const { name, value } = event.target;
-
 		this.setState({ [name]: value });
 	};
 
+	/* ====================== RENDER ======================*/
 	render() {
 		const { displayName, email, password, confirmPassword } = this.state;
 		return (
